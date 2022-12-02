@@ -1,0 +1,13 @@
+package com.qacollaboration.enums;
+
+public enum ConfigProperties {
+    URL,
+    OVERRIDEREPORTS,
+    PASSEDSTEPSSCREENSHOT,
+    FAILEDSTEPSSCREENSHOT,
+    SKIPPEDSTEPSSCREENSHOT,
+    RETRYFAILEDTESTS,
+    RUNMODE,
+    BROWSER,
+    SELENIUMGRIDURL
+}
