@@ -1,6 +1,5 @@
 package com.qacollaboration.utils.dataprovider;
 
-import core.utils.Config;
 import org.testng.annotations.DataProvider;
 
 import java.lang.reflect.Method;
@@ -9,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DataProviderManager {
-    private static String testFilePath = System.getProperty("user.dir")+"\\"+Config.getJsonDataFilePath();
+    private static String testFilePath = System.getProperty("user.dir")+"\\"+"Filepath";
     private static List<Map<String,Object>> testDataList = new ArrayList<>();
     @DataProvider(name="getData",parallel = true)
     public static Object[][] getData(Method method)

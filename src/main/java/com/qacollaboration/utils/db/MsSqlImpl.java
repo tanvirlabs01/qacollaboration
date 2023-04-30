@@ -1,18 +1,16 @@
 package com.qacollaboration.utils.db;
 
-import core.utils.Config;
-
 import java.sql.*;
 import java.util.*;
 
 public class MsSqlImpl implements DataBaseUtil{
     private static MsSqlImpl instance;
-    private static String msSqlDriver = Config.getMsSqlServerDbConnectionDriverClass();
-    private static String msSqlHostName = Config.getMsSqlServerHost();
-    private static String msSqlUserName = Config.getMsSqlServerUser();
-    private static String msSqlPassword = Config.getMsSqlServerPassword();
-    private static String msSqlDataBase = Config.getMsSqlServerDbName();
-    private static String msSqlDataBasePort = Config.getMsSqlServerDbPort();
+    private static String msSqlDriver = "";
+    private static String msSqlHostName = "";
+    private static String msSqlUserName = "";
+    private static String msSqlPassword = "";
+    private static String msSqlDataBase = "";
+    private static String msSqlDataBasePort = "";
     private static Statement statement;
     private Connection connection;
     private ResultSet resultSet;

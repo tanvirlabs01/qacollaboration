@@ -1,19 +1,17 @@
 package com.qacollaboration.utils.db;
 
-import core.utils.Config;
-
 import java.sql.*;
 import java.util.*;
 
 public class MySqlImpl implements DataBaseUtil{
 
     private static MySqlImpl instance;
-    public static String mySqlDriver = Config.getMySqlDbConnectionDriverClass();
-    public static String mySqlHostName = Config.getMySqlDbHost();
-    public static String mySqlUserName = Config.getMySqlDbUser();
-    public static String mySqlPassword = Config.getMySqlDbPassword();
-    public static String mySqlDbName = Config.getMySqlDbName();
-    public static String mySqlDbPort = Config.getMySqlDbPort();
+    public static String mySqlDriver = "";
+    public static String mySqlHostName = "";
+    public static String mySqlUserName = "";
+    public static String mySqlPassword = "";
+    public static String mySqlDbName = "";
+    public static String mySqlDbPort = "";
     private static Statement statement;
     private Connection connection;
     private ResultSet resultSet;
